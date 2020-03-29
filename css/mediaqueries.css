@@ -1,0 +1,139 @@
+@media (max-width: 1000px) {
+  .container-nav {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .inicio-pagina .titulo {
+    font-size: 9vw;
+  }
+
+  .container-per {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .container-per .etiqueta {
+    margin-top: 40px;
+    font-size: 2vw;
+  }
+
+  select, input, label {
+    font-size: 1.5vw;
+  }
+
+  .titulos {
+    margin-top: 50px;
+    font-size: 6vw;
+  }
+
+  .subtitulos {
+    font-size: 2vw;
+  }
+
+  .container-pago {
+    padding: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tc1 {
+    display: none;
+  }
+
+  .tc2 {
+    display: block;
+  }
+
+  .lineas-sub::before {
+    width: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .row.no-gutters > [class^=col-] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .citadino span {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .tc1 {
+    display: block;
+  }
+
+  .tc2 {
+    display: none;
+  }
+
+  .lineas::after, .lineas::before {
+    width: 0;
+  }
+
+  .inicio-pagina .titulo {
+    font-size: 13vw;
+  }
+
+  .container-per {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+  }
+  .container-per .etiqueta {
+    margin-top: 25px;
+    font-size: 4vw;
+  }
+
+  select, input, label {
+    font-size: 3.5vw;
+  }
+
+  .titulos {
+    font-size: 8vw;
+  }
+
+  .subtitulos {
+    font-size: 3.5vw;
+  }
+
+  .rb-contactar {
+    margin: 0;
+    padding-left: 2%;
+  }
+  .rb-contactar img {
+    margin-right: 0;
+  }
+  .rb-contactar br {
+    display: block;
+  }
+  .rb-contactar .rb-ambos {
+    margin-top: 10px;
+  }
+
+  textarea {
+    margin: 0 15px;
+    height: 30vw;
+  }
+
+  .cb {
+    font-size: 3.3vw;
+    font-weight: bold;
+  }
+
+  .boton-enviar {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=mediaqueries.css.map */

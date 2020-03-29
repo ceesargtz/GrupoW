@@ -1,0 +1,27 @@
+$letterSpacing:2px;
+$bold:700;
+$black:900;
+
+.lato-black{
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: $black;
+}
+
+.display-bold{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: $bold;
+  letter-spacing: $letterSpacing;
+}
+.display-black-italic{
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: $black;
+}
+.lato-regular {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: $letterSpacing;
+}

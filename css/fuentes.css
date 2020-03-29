@@ -1,0 +1,27 @@
+.lato-black {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+}
+
+.display-bold {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.display-black-italic {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 900;
+}
+
+.lato-regular {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=fuentes.css.map */

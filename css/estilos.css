@@ -1,0 +1,267 @@
+@charset "UTF-8";
+body {
+  background-image: url("../assets/img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::placeholder {
+  color: black;
+}
+
+.container-nav {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.navbar-fiat {
+  font-size: 13px;
+  height: 45px;
+  position: relative;
+}
+
+.icono-fiat {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: -20px;
+}
+
+.navbar-center {
+  display: flex;
+  padding-top: 8px;
+  margin: 0 8%;
+  justify-content: space-around;
+  padding-right: 5%;
+}
+.navbar-center li {
+  display: inline;
+  padding: 1px;
+}
+.navbar-center li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hamburguer-icon {
+  position: absolute;
+  top: 10px;
+  right: 2%;
+  font-size: 17px;
+  color: #ce2f33;
+}
+
+#menu2 {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+#menu2 button {
+  margin: 0;
+  border-radius: 0;
+}
+
+.inicio-pagina .cotizador {
+  margin-top: 30px;
+  font-size: 13px;
+}
+.inicio-pagina .citadino {
+  font-size: 18px;
+}
+.inicio-pagina .citadino span {
+  background: #4957d1;
+}
+.inicio-pagina .titulo {
+  font-size: 110px;
+  position: relative;
+}
+.inicio-pagina .titulo img {
+  position: absolute;
+  z-index: 1;
+  top: 57%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+
+.tc2 {
+  display: none;
+}
+
+.lineas {
+  z-index: 1;
+  position: relative;
+}
+.lineas span {
+  background: white;
+  padding: 0 15px;
+}
+
+.lineas::before {
+  border-top: 2px solid currentColor;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.citadino::before {
+  width: 470px;
+}
+
+.container-per {
+  padding-top: 110px;
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 4%;
+  padding-right: 4%;
+  color: #666666;
+}
+.container-per .etiqueta {
+  font-size: 1vw;
+  margin-top: 35px;
+  padding-left: 11px;
+}
+
+.row.no-gutters > [class^=col-] {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.select {
+  position: relative;
+}
+
+.select:after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 70%;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+select, label {
+  cursor: pointer;
+}
+
+select, input, label {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1vw;
+  letter-spacing: 2px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  resize: none;
+}
+
+.titulos {
+  margin-top: 30px;
+  color: red;
+  font-size: 2.7vw;
+}
+
+.subtitulos {
+  margin-top: -7px;
+  font-size: 0.9vw;
+  letter-spacing: 2px;
+}
+
+.rb {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.rb-contactar {
+  width: 33%;
+}
+.rb-contactar img {
+  width: 17px;
+  margin-right: 30px;
+}
+.rb-contactar br {
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  background-color: red;
+  color: white;
+}
+
+.container-pago {
+  padding: 0px 50px;
+}
+
+.rb-pago {
+  width: 50%;
+}
+
+textarea {
+  height: 15vw;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.cb {
+  padding-left: 2em;
+  position: relative;
+}
+
+.cb:before {
+  content: "";
+  background: none;
+  border: 1px solid gray;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  left: 0px;
+}
+
+input[type=checkbox]:checked + .cb:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  color: gray;
+}
+
+.boton-enviar {
+  text-align: right;
+}
+.boton-enviar button {
+  background-color: white;
+  font-size: 13px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid red;
+  width: 150px;
+}
+
+.boton-enviar button:hover {
+  background-color: #ce2f33;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,
+    900,900i|Playfair+Display:400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fuentes.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class=" bg-white">
+      <div class="container-nav navbar-fiat">
+
+            <a class="icono-fiat" href="">
+              <img src="assets/img/icono-fiat.png" >
+            </a>
+
+            <div  id="menu">
+              <ul class=" mr-auto navbar-center lato-black ">
+                <li >
+                  <a  href="">MODELOS</a>
+                </li>
+                <li class="">
+                  <a href="">PRUEBA DE MANEJO</a>
+                </li>
+                <li class="">
+                  <a href="">COTIZAR</a>
+                </li>
+                <li class="">
+                  <a href="">PROMOCIONES</a>
+                </li>
+                <li class="">
+                  <a href="">DISTRIBUIDORES</a>
+                </li>
+              </ul>
+            </div>
+        <div class="hamburguer-icon" OnClick="darClick()" type="button" data-toggle="collapse" data-target="#menu" >
+          <i class="fas fa-bars fa-lg"></i>
+        </div>
+      </div>
+    </nav>
+    <div id="menu2" height="100%">
+      <button class=" btn btn-danger btn-block"type="button" name="button">MODELOS</button>
+      <button class=" btn btn-danger btn-block"type="button" name="button">PRUEBA DE MANEJO</button>
+      <button class=" btn btn-danger btn-block"type="button" name="button">COTIZAR</button>
+      <button class=" btn btn-danger btn-block"type="button" name="button">PROMOCIONES</button>
+      <button class=" btn btn-danger btn-block"type="button" name="button">DISTRIBUIDORES</button>
+
+    </div>
+
+    <!-- Inicio de página -->
+    <div class="inicio-pagina">
+      <div class="text-white text-center cotizador lato-regular">
+        COTIZADOR
+      </div>
+      <div class=" text-center mt-3 ">
+        <div class="tc1">
+          <h2 class="display-bold citadino lineas"><span >CITADINO, AVENTURERO, DEPORTIVO</span></h2>
+        </div>
+        <div class="tc2">
+          <h2 class="display-bold citadino lineas"><span >ELIGE EL DIAT QUE VA CONTIGO</span></h2>
+        </div>
+      </div>
+      <div class="text-white text-center titulo display-black-italic">Elige el tuyo
+        <div class="text-center">
+          <img class="img-fluid" src="assets/img/carro.png">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Inicio de formulario -->
+    <div class="bg-white container-per mb-5 lato-regular">
+
+      <div class="row pt-5 no-gutters">
+        <div class="col-sm-6 select">
+          <div class="etiqueta">MODELO</div>
+          <select name="modelo" type="text">
+            <option value="" selected="true" hidden >SELECCIONA</option>
+            <option value="mobi" >MOBI</option>
+            <option value="unoblacktop" >UNO BLACKTOP</option>
+            <option value="palio" >PALIO ADVENTURE</option>
+            <option value="fiat500l" >FIAT 500L</option>
+          </select>
+        </div>
+        <div class="col-sm-6 select">
+          <div class="etiqueta">VERSIÓN</div>
+          <select name="version" type="text" >
+            <option value="" selected="true" hidden >SELECCIONA</option>
+            <option value="mobi-lm" >MOBI LIKE MANUAL</option>
+            <option value="mobi-wm" >MOVI WAY MANUAL</option>
+            <option value="uno-w" >UNO WAY</option>
+            <option value="uno-l" >UNO LIKE</option>
+          </select>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-sm-6 select">
+          <div class="etiqueta">ESTADO</div>
+          <select name="estado" type="text" >
+              <option value="" selected="true" hidden >SELECCIONA</option>
+              <option value="coah" >COAHUILA</option>
+              <option value="chihuahua" >CHIHUAHUA</option>
+              <option value="durango" >DURANGO</option>
+              <option value="nl" >NUEVO LEÓN</option>
+          </select>
+        </div>
+        <div class="col-sm-6 select">
+          <div class="etiqueta">DISTRIBUIDOR</div>
+          <select name="distribuidor" type="text" >
+              <option value="" selected="true" hidden >SELECCIONA</option>
+              <option value="mobi" >ALICIA AUTOMOTRIZ</option>
+              <option value="unoblacktop" >ALTA MOTRIZ</option>
+              <option value="palio" >AUTO CENTRO DE CELAYA</option>
+              <option value="fiat500l" >AUTOCAMIONES DE CHIHUAHUA</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Sección de datos -->
+      <div class=" text-center ">
+        <h2 class="display-black-italic lineas titulos"><span>Datos personales</span></h2>
+      </div>
+      <div class="text-center subtitulos">
+        ESCRIBE TUS DATOS PERSONALES
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-sm-4">
+          <div class="etiqueta">NOMBRE (S)</div>
+          <input id="nombres" type="text" name="nombres" placeholder="ESCRIBE TU NOMBRE" class="">
+        </div>
+        <div class="col-sm-4">
+          <div class="etiqueta">APELLIDO PATERNO</div>
+          <input type="text" name="paterno" placeholder="ESCRIBE TU APELLIDO" >
+        </div>
+        <div class="col-sm-4">
+          <div class="etiqueta">APELLIDO MATERNO</div>
+          <input type="text" name="materno" placeholder="ESCRIBE TU APELLIDO" >
+        </div>
+
+      </div>
+      <div class="row no-gutters">
+        <div class="col-sm-4 ">
+          <div class="etiqueta">EMAIL</div>
+          <input type="text" name="nombres" placeholder="CORREO@EMAIL.COM.MX" >
+        </div>
+        <div class="col-sm-4 ">
+          <div class="etiqueta">TELÉFONO</div>
+          <input type="text" name="paterno" placeholder="01 . 844 . 439 . 0654" >
+        </div>
+      </div>
+      <div class="px-3">
+        <div class="row etiqueta no-gutters">DESEO SER CONTACTADO POR </div>
+        <div class="row text-center no-gutters">
+
+            <input name="contactar" checked="checked" type="radio" id="opc1" value="telefono">
+            <label class="rb rb-contactar" for="opc1"><i class="fas fa-phone-alt mr-2"></i> <br>TELÉFONO</label>
+
+            <input name="contactar" type="radio" id="opc2" value="correo">
+            <label class="rb rb-contactar" for="opc2"><img width="15px" src="assets/img/correo.png"> <br class="icono-button">EMAIL</label>
+
+            <input name="contactar" type="radio" id="opc3" value="ambos">
+            <label class="rb rb-contactar" for="opc3"> <div class="rb-ambos">AMBOS</div></label>
+
+        </div>
+      </div>
+
+      <!-- Sección de pagos -->
+      <div class="container-pago">
+        <div class="text-center ">
+          <h2 class="display-black-italic lineas lineas-sub titulos"><span>Forma de pago</span></h2>
+        </div>
+        <div class="text-center subtitulos">
+          PERSONALIZA TU COTIZACIÓN
+        </div>
+        <div class="px-3">
+          <div class="row etiqueta no-gutters">ELIGE TU TIPO DE PAGO</div>
+          <div class="row no-gutters">
+            <input name="pago" type="radio" id="opc4" value="contado">
+            <label class="rb rb-pago" for="opc4" >CONTADO</label>
+
+            <input checked="checked" name="pago" type="radio" id="opc5" value="credito">
+            <label class="rb rb-pago" for="opc5" width="50%">CRÉDITO</label>
+
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-6">
+            <div class="etiqueta">CANTIDAD DE ENGANCHE</div>
+            <input type="text" name="cantidad_enganche" placeholder="80,000.00" >
+          </div>
+          <div class="col-sm-6 select">
+            <div class="etiqueta">PLAZO</div>
+              <select name="plazo" type="text" >
+                  <option value="72" selected="true" >72 MESES</option>
+                  <option value="24" >24 MESES</option>
+
+              </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <h2 class="display-black-italic lineas lineas-sub titulos"><span>Comentarios</span></h2>
+        </div>
+
+      </div>
+
+      <!-- Sección de comentarios -->
+
+      <div class="text-center subtitulos">
+        NOS IMPORTAN TUS COMENTARIOS
+      </div>
+      <div class="row no-gutters">
+        <div class="etiqueta">¿DUDAS? ¿COMENTARIOS?</div>
+          <textarea class="lato-regular"name="comentarios" rows="5" cols="80" placeholder="ESCRÍBENOS" ></textarea>
+      </div>
+      <div class="row pb-5 etiqueta no-gutters">
+        <div class="col-sm-9 ">
+          <input type="checkbox" id="aviso"class="mr-2"checked="checked">
+          <label class="cb lato-regular" for="aviso">He leído y acepto el <u class="lato-bold">aviso de privacidad</u></label> <br> <br>
+          <input type="checkbox" id="promociones"class="mr-2">
+          <label class="cb lato-regular" for="promociones">No deseo recibir promociones</label>
+
+        </div>
+        <div class="col-sm-3 boton-enviar ">
+          <button type="submit" name="submit">ENVIAR</button>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+<script type="text/javascript">
+  cerrado=true
+  function darClick(){
+    if (screen.width<768){
+      if(this.cerrado==true){
+        document.getElementById('menu2').style.display="block"
+        this.cerrado=false
+      }else{
+        document.getElementById('menu2').style.display="none"
+        this.cerrado=true
+      }
+    }
+
+}
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
